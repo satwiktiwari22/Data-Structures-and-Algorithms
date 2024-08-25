@@ -29,7 +29,7 @@ class BST{
     }
     void insert(int val){
         Node * ptr = this->root;
-        recursive(ptr,val);
+        this->root = recursive(ptr,val);
     }
     Node* recursive(Node* tree,int val){
         if(tree==nullptr){
